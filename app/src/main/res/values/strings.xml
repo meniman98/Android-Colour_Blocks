@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Colour Blocks</string>
+    <string name="boxOne">Box 1</string>
+    <string name="boxTwo">Box 2</string>
+    <string name="boxThree">Box 3</string>
+    <string name="boxFour">Box 4</string>
+    <string name="boxFive">Box 5</string>
+    <string name="greeting">Hello and welcome. Go ahead and tap anywhere on the screen!</string>
+</resources>
