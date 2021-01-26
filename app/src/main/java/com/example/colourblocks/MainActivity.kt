@@ -47,20 +47,22 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun makeColored(view: View) {
-        when (view.id) {
+        binding.apply {
+            when (view) {
 
-            // Boxes using Color class colors for background
-            R.id.box1 -> view.setBackgroundColor(Color.DKGRAY)
-            R.id.box2 -> view.setBackgroundColor(Color.GRAY)
+                // Boxes using Color class colors for background
+                box1 -> view.setBackgroundColor(Color.DKGRAY)
+                box2 -> view.setBackgroundColor(Color.GRAY)
 
-            // Boxes using Android color resources for background
-            R.id.box3 -> view.setBackgroundResource(android.R.color.holo_green_light)
-            R.id.box4 -> view.setBackgroundResource(android.R.color.holo_green_dark)
-            R.id.box5 -> view.setBackgroundResource(android.R.color.holo_green_light)
+                // Boxes using Android color resources for background
+                box3 -> view.setBackgroundResource(android.R.color.holo_green_light)
+                box4 -> view.setBackgroundResource(android.R.color.holo_green_dark)
+                box5 -> view.setBackgroundResource(android.R.color.holo_green_light)
 
-            else -> view.setBackgroundColor(Color.LTGRAY)
+                else -> view.setBackgroundColor(Color.LTGRAY)
 
 
+            }
         }
     }
 }
