@@ -12,12 +12,8 @@ import androidx.databinding.DataBindingUtil
 import com.example.colourblocks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var box_one_text: TextView
-    private lateinit var box_two_text: TextView
-    private lateinit var box_three_text: TextView
-    private lateinit var box_four_text: TextView
-    private lateinit var box_five_text: TextView
-    private lateinit var constraint: ConstraintLayout
+
+
 
     //late initialise the binding variable
     private lateinit var binding: ActivityMainBinding
@@ -28,24 +24,24 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
-        box_one_text = findViewById(R.id.box1)
-        box_two_text = findViewById(R.id.box2)
-        box_three_text = findViewById(R.id.box3)
-        box_four_text = findViewById(R.id.box4)
-        box_five_text = findViewById(R.id.box5)
-        constraint = findViewById(R.id.constraintLayout)
+
+
         setListeners()
     }
 
     private fun setListeners() {
-        val listOfViews: List<View> =
-            listOf(
-                box_one_text, box_two_text, box_three_text,
-                box_four_text, box_five_text, constraint
-            )
+        binding.apply {
+            val listOfViews: List<View> =
+                listOf(
+                    box1, box2, box3,
+                    box4, box5, constraintLayout
+                )
 
-        for (item in listOfViews) {
-            item.setOnClickListener { makeColored(it) }
+
+
+            for (item in listOfViews) {
+                item.setOnClickListener { makeColored(it) }
+            }
         }
     }
 
