@@ -1,6 +1,7 @@
 package com.example.colourblocks
 
 import android.graphics.Color
+import android.graphics.Color.GRAY
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Layout
@@ -34,7 +35,8 @@ class MainActivity : AppCompatActivity() {
             val listOfViews: List<View> =
                 listOf(
                     box1, box2, box3,
-                    box4, box5, constraintLayout
+                    box4, box5, constraintLayout, box6,
+                    box7, box8, box9, box10
                 )
 
 
@@ -58,6 +60,13 @@ class MainActivity : AppCompatActivity() {
                 box3 -> view.setBackgroundResource(android.R.color.holo_green_light)
                 box4 -> view.setBackgroundResource(android.R.color.holo_green_dark)
                 box5 -> view.setBackgroundResource(android.R.color.holo_green_light)
+
+                box7 -> view.setBackgroundResource(android.R.color.holo_blue_bright)
+                box8 -> view.setBackgroundResource(android.R.color.holo_blue_dark)
+                box9 -> view.setBackgroundResource(android.R.color.holo_blue_light)
+
+                box6 -> view.setBackgroundColor(Color.GRAY)
+                box10 -> view.setBackgroundColor(Color.DKGRAY)
 
                 else -> view.setBackgroundColor(Color.LTGRAY)
 

@@ -107,9 +107,11 @@
         <TextView
             android:id="@+id/box8"
             style="@style/WhiteBox"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/box8"
             app:layout_constraintBottom_toBottomOf="@+id/box6"
             app:layout_constraintEnd_toStartOf="@+id/box7"
@@ -120,7 +122,7 @@
         <TextView
             android:id="@+id/box9"
             style="@style/WhiteBox"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -135,7 +137,7 @@
         <TextView
             android:id="@+id/box7"
             style="@style/WhiteBox"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
