@@ -25,7 +25,8 @@ globally due to scope. This makes using the variable a bit of a pain elsewhere, 
 how easy this is with data binding
 
 ### Data binding steps
-Make sure to enable data binding first inside build.gradle ```    buildTypes {
+Make sure to enable data binding first inside build.gradle 
+```    buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -37,7 +38,8 @@ Make sure to enable data binding first inside build.gradle ```    buildTypes {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }```
+    }
+ ```
 
 1. Globally initialise the binding variable by doing ```private lateinit var binding: FragmentWelcomeFragment``` with Java it might be something like ```private FragmentWelcome binding;```
 2. Within onCreate, give binding a value by doing ```binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)``` should be the same for Java. 
